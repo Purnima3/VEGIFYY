@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "PP mori";
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+.cursor {
+	height: 20px;
+	width: 20px;
+	background-color: purple;
+	border-radius: 50%;
+	position: fixed;
+	z-index: 8;
+	mix-blend-mode: difference;
+	transition: all linear 0.1s;
+}
+
+.crsrAdd {
+	height: 25px;
+	width: 5vw;
+	padding: 2px 0;
+	border-radius: 2%;
+}
+.main {
+	background-color: #0f0d0d;
+	color: white;
+}
+
+.page1 {
+	/* takes height according to screen of device */
+	/* border: 2px solid red; */
+	height: 210vh;
+	width: 100%;
+	position: relative;
+	z-index: 9;
+	/* background-color: black; */
+}
+
+#nav {
+	height: 55px;
+	width: 100%;
+	/* background-color: red; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 30px;
+}
+
+#nav img {
+	margin-top: 8px;
+	width: 150px;
+	height: 80px;
+	/* position: relative;
+	left: 30px;
+	bottom: 5px; */
+}
+
+#nav-part2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+#nav-part2 h4:hover {
+	color: red;
+}
+#nav-part3 #circle {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: white;
+}
+
+#nav-part2 :nth-child(1) {
+	border-bottom: 1.5px solid #fff;
+}
+
+.page1 > h1 {
+	font-size: 8vw;
+	margin-top: 12vw;
+	margin-left: 6vw;
+	font-weight: 300;
+	font-family: PP mori;
+}
+
+.page1 > h2 {
+	font-size: 8vw;
+	margin-left: 19vw;
+	font-weight: 300;
+	font-family: PP mori;
+}
+
+.page1 > video {
+	width: 60%;
+	/* height: 80vh; */
+	/* margin-left: 20%; */
+	margin-top: 10vw;
+	margin-bottom: 10vw;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.page2 {
+	/* takes height according to screen of device */
+	padding: 12vh 9vh;
+	position: relative;
+	min-height: 110vh;
+	width: 100%;
+	font-family: PP mori;
+	/* border: 2px solid red; */
+	border-bottom: 2px solid #636262;
+	position: relative;
+	z-index: 9;
+	/* background-color: white; */
+}
+
+.page2 h1 {
+	font-size: 7vw;
+	font-family: PP mori;
+	font-weight: 300;
+}
+
+.page2 h2 {
+	font-size: 2vw;
+	font-family: PP mori;
+	font-weight: 300;
+}
+.page2 .wrapper {
+	width: 90%;
+	height: 30%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 2px solid red;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+.page2 .wrapper .box {
+	background-color: #636262;
+	border-radius: 10px;
+	width: 20%;
+	height: 100%;
+	border: 2px solid red;
+}
