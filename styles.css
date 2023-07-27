@@ -16,6 +16,12 @@
 --secondary: #d3f8dd;
 --accent: #22dd54;
 --color2: #ae2d2d;
+--background1: #74dcb8;
+--shadow-color: 158deg 34% 54%;
+--shadow-elevation-low:
+    0.2px 0.9px 0.7px hsl(var(--shadow-color) / 0.74),
+    0.3px 1.3px 1px -2.5px hsl(var(--shadow-color) / 0.49),
+    1px 3.8px 2.9px -5px hsl(var(--shadow-color) / 0.25);
 }
 
 html {
@@ -26,6 +32,18 @@ html {
     scroll-padding-top: 7rem;
 }
 
+html::-webkit-scrollbar {
+    width:1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #1f242d;
+}
+
 body {
     height: 100%;
     width: 100%;
@@ -33,6 +51,50 @@ body {
     color: var(--color2);
 }
 
+/* section */
+section {
+    padding: 5rem 9%;
+}
+
+/* media queries */
+
+
+@media (max-width: 991px){
+    html {
+        font-size: 55%;
+    }
+    .header .navbar {
+        padding: 2rem;
+    }
+    section{
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width: 768px){
+    .header .navbar {
+        display: none;
+    }
+
+    .header .navbar {
+        box-shadow: var(--shadow-elevation-medium);
+        position: relative;
+    }
+
+    .header .icon {
+        position: absolute;
+    }
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+
+}
+
+
+/* main */
 .main
 {
     display: flex;
@@ -53,7 +115,7 @@ body {
 /* header */
 
 .header {
-    position: fixed;
+    /* position: fixed; */
     top: 0; left: 0; right: 0;
     z-index: 1000;
     display: flex;
@@ -141,4 +203,148 @@ body {
 #user:hover {
     color: var(--accent);
     text-shadow: 1rem var(--accent);
+}
+/* Home page */
+/* .custom-shape-divider-bottom-1690460597 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background: #22dd54;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1690460597 svg {
+    position: relative;
+    display: block;
+    width: calc(134% + 1.3px);
+    height: 203px;
+
+}
+
+/* image */
+.product-img a img {
+    display: flex;
+    border-radius: 30%;
+    margin: .5rem;
+    height: 15rem;
+    flex-direction: column;
+    box-shadow: 0 0 2rem #1f242d ;
+}
+
+/* Home page */
+.home {
+    background: url(brick.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home .row {
+    display: flex;
+    align-items: center;
+    padding-left: 10rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+/* .home .row .content {
+    flex: 1 1 42rem;
+}
+
+.home .row .vegi-slider {
+    flex: 1 1 42rem;
+    text-align: center;
+    margin-top: 2rem;
+} */
+
+.home .row .vegi-slider a:hover img {
+    transform: scale(.9);
+}
+
+.home .row .content h3 {
+    color: var(--text);
+    font-size: 4.5rem;
+}
+
+.home .row .content p {
+    color: var(--primary);
+    font-size: 3rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+
+/* butoon */
+
+.btn {
+    text-decoration: none;
+    border: 0;
+    background: #27ae60;
+    padding: .5rem;;
+    color: #1f242d;
+    outline: .2rem solid #1f242d;
+    outline-offset: -.2rem;
+    border-radius: 1rem 1rem 1rem;
+    transition: 500ms;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: greenyellow;
+    outline-offset: .2rem;
+    outline-color: aliceblue;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }

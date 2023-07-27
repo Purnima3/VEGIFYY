@@ -1,62 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Changes</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Bootstrap CSS -->
+   <link
+     rel="stylesheet"
+     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+   />
+
+   <!-- Owl Carousel CSS -->
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+   />
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+   />
+
 </head>
+
 <body>
-    <section class="header">
-        <img src="logo.png" alt="logo" id="logo">
-        <!-- navigation bar -->
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="fruits">Fruits</a>
-            <a href="vegetables">Vegetables</a>
-            <a href="product">Products</a>
-            <a href="about us">About</a>
-        </nav>
-        <div class="icons">
-            <i class='bx bx-user' id="user"></i>
-            <i class='bx bx-cart' id="cart"></i>
-            <input type="text" name="query" placeholder="Search..." id="search-bar" />
-            <button type="submit" class="search-button"><i class='bx bx-search'></i></button>
+  <section class="header">
+    <img src="logo.png" alt="logo" id="logo">
+    <!-- navigation bar -->
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#fruit">Fruits</a>
+      <a href="#vegetable">Vegetables</a>
+      <a href="#product">Products</a>
+      <a href="#info">Contact us</a>
+    </nav>
+    <div class="icons">
+      <i class='bx bx-user' id="user"></i>
+      <i class='bx bx-cart' id="cart"></i>
+      <input type="text" name="query" placeholder="Search..." id="search-bar" />
+      <button type="submit" class="search-button"><i class='bx bx-search'></i></button>
+    </div>
+
+  </section>
+
+  <!-- Home  -->
+  <Section class="home">
+    <div class="row">
+      <div class="content">
+        <h3>upto 25% off</h3>
+        <p>We'll deliver everything you need</p>
+        <a href="#" class="btn">Shop now</a>
+      </div>
+      <div class="vegi-slider">
+        <div class="product-img">
+          <a href="#"><img src="avacado.jpg" alt=""></a>
+          <a href="#"><img src="apple.jpg" alt=""></a>
+          <a href="#"><img src="tomatoes.jpg" alt=""></a>
+          <a href="#"><img src="broccoli.jpg" alt=""></a>
+          <a href="#"><img src="beetroot.jpg" alt=""></a>
+          <a href="#"><img src="lichi.jpg" alt=""></a>
         </div>
-    </section>
+      </div>
+    </div>
+  </Section>
 
-    <!-- Home  -->
-    <Section class="home">
+  <!-- home section ends here -->
 
-    </Section>
+  <!-- fruits  -->
+  <section  id = "fruit">
+    <div class="container-fluid">
+      <h1 class="text-center display-3 mt-3 mb-2 font-weight-bold">
+        Fruits
+      </h1>
+      <div class=" myCarouse owl-carousel owl-theme my-3">
 
-    <!-- fruits  -->
-    <section class="fruit">
+        <div class="card shadow my-3">
+          <img
+            src="https://images.pexels.com/photos/68525/soap-colorful-color-fruit-68525.jpeg"
+            class="card-img-top"
+            height="300"
+            alt="Image 1"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card 1</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div class="card shadow my-3">
+          <img
+            src="https://images.pexels.com/photos/8754695/pexels-photo-8754695.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            class="card-img-top"
+            alt="Image 2"
+            height="300"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card 2</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div class="card shadow my-3">
+        <img
+          src="https://images.pexels.com/photos/8754695/pexels-photo-8754695.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          class="card-img-top"
+          alt="Image 2"
+          height="300"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card 2</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </div>
+      <div class="card shadow my-3">
+      <img
+        src="https://images.pexels.com/photos/8754695/pexels-photo-8754695.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+        class="card-img-top"
+        alt="Image 2"
+        height="300"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Card 2</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+    </div>
+    <div class="card shadow my-3">
+    <img
+      src="https://images.pexels.com/photos/8754695/pexels-photo-8754695.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+      class="card-img-top"
+      alt="Image 2"
+      height="300"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Card 2</h5>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+    </div>
+  </div>
+        <!-- Add more cards as needed -->
+      </div>
+    </div>
 
-    </section>
+  </section>
 
-    <!-- vegetables -->
-    <section class="vegetable">
+  <!-- vegetables -->
+  <section id="vegetable">
+    <div class="container-fluid">
+      <h1 class="text-center display-3 mt-3 mb-2 font-weight-bold">
+        vegetables
+      </h1>
+      <div  class="myCarouse owl-carousel owl-theme my-3">
+        <div class="card shadow my-3">
+          <img
+            src="https://images.pexels.com/photos/68525/soap-colorful-color-fruit-68525.jpeg"
+            class="card-img-top"
+            height="300"
+            alt="Image 1"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card 1</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div class="card shadow my-3">
+          <img
+            src="https://images.pexels.com/photos/8754695/pexels-photo-8754695.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            class="card-img-top"
+            alt="Image 2"
+            height="300"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card 2</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div class="card shadow my-3">
+        <img
+          src="https://images.pexels.com/photos/8754695/pexels-photo-8754695.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          class="card-img-top"
+          alt="Image 2"
+          height="300"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card 2</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </div>
+      <div class="card shadow my-3">
+      <img
+        src="https://images.pexels.com/photos/8754695/pexels-photo-8754695.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+        class="card-img-top"
+        alt="Image 2"
+        height="300"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Card 2</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+    </div>
+    <div class="card shadow my-3">
+    <img
+      src="https://images.pexels.com/photos/8754695/pexels-photo-8754695.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+      class="card-img-top"
+      alt="Image 2"
+      height="300"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Card 2</h5>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+    </div>
+  </div>
+        <!-- Add more cards as needed -->
+      </div>
+    </div>
 
-    </section>
 
-    <!-- Top rated Products  -->
-    <section class="product">
 
-    </section>
+  </section>
 
-    <!-- About us -->
-    <section class="info">
+  <!-- Top rated Products  -->
+  <section id="product">
+    <div class="container-fluid">
+      <h1 class="text-center display-3 mt-3 mb-2 font-weight-bold">
+        Product
+      </h1>
+      <div  class="myCarouse owl-carousel owl-theme my-3">
+        <div class="card shadow my-3">
+          <img
+            src="https://images.pexels.com/photos/68525/soap-colorful-color-fruit-68525.jpeg"
+            class="card-img-top"
+            height="300"
+            alt="Image 1"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card 1</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div class="card shadow my-3">
+          <img
+            src="https://images.pexels.com/photos/8754695/pexels-photo-8754695.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            class="card-img-top"
+            alt="Image 2"
+            height="300"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card 2</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div class="card shadow my-3">
+        <img
+          src="https://images.pexels.com/photos/8754695/pexels-photo-8754695.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          class="card-img-top"
+          alt="Image 2"
+          height="300"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card 2</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </div>
+      <div class="card shadow my-3">
+      <img
+        src="https://images.pexels.com/photos/8754695/pexels-photo-8754695.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+        class="card-img-top"
+        alt="Image 2"
+        height="300"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Card 2</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+      </div>
+    </div>
+    <div class="card shadow my-3">
+    <img
+      src="https://images.pexels.com/photos/8754695/pexels-photo-8754695.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+      class="card-img-top"
+      alt="Image 2"
+      height="300"
+    />
+    <div class="card-body">
+      <h5 class="card-title">Card 2</h5>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+    </div>
+  </div>
+        <!-- Add more cards as needed -->
+      </div>
+    </div>
 
-    </section>
 
-    <!-- Footer  -->
-    <section class="footer">
+  </section>
 
-    </section>
+  <!-- Contact us -->
+  <section id="info">
+    <div class="container">
+   <div style="text-align:center">
+     <h2>Contact Us</h2>
+     <p>Swing by for a cup of coffee, or leave us a message:</p>
+   </div>
+   <div class="row">
+     <div class="column">
+       <img src="deh.jpg" style="width:100%">
+     </div>
+     <div class="column">
+       <form action="">
+         <label for="fname">First Name</label>
+         <input type="text" id="fname" name="firstname" placeholder="Your name..">
+         <label for="lname">Last Name</label>
+         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+         <label for="country">Country</label>
+         <select id="country" name="country">
+           <option value="australia">India</option>
+           <option value="canada">Canada</option>
+           <option value="australia">Australia</option>
+           <option value="usa">USA</option>
+         </select>
+         <label for="subject">Subject</label>
+         <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+         <input type="submit" value="Submit">
+       </form>
+     </div>
+   </div>
+ </div>
+  </section>
 
+  <!-- Footer  -->
+  <section class="footer">
+
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+     $(document).ready(function () {
+       $('.myCarouse').owlCarousel({
+         items: 3, // Number of cards shown in each slide
+         loop: true, // Continuously loop the carousel
+         margin: 20, // Space between cards
+         nav: true, // Show navigation buttons
+         navText: [
+           "<i class='fas fa-chevron-left'></i>",
+           "<i class='fas fa-chevron-right'></i>",
+         ], // Custom navigation icons
+         responsive: {
+           0: {
+             items: 1, // Number of cards shown in the carousel for smaller screens
+           },
+           768: {
+             items: 2, // Number of cards shown in the carousel for medium screens
+           },
+           992: {
+             items: 3, // Number of cards shown in the carousel for large screens
+           },
+         },
+       });
+
+     });
+   </script>
+ </body>
 </body>
+
 </html>
