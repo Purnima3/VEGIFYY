@@ -1,0 +1,92 @@
+body{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0px;
+    background-color: white;
+}
+h1{
+    margin-bottom: 4.688rem;
+    text-align: center;
+}
+h2{
+    display: inline;
+}
+hr{
+    display: inline-block;
+    width: 46%;
+}
+
+label{
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    margin-bottom: 0.2rem;
+}
+textarea{
+    width: -webkit-fill-available;
+    height: 3.75rem;
+    margin-bottom: 1rem;
+}
+select{
+    display: block;
+    width: -webkit-fill-available;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    margin-bottom: 1rem;
+}
+.login-textInput{
+    height: 30px;
+    display: block;
+    width: -webkit-fill-available;
+    margin-bottom: 1.6rem;
+    border: 1px solid grey;
+    border-radius: 0.625rem;
+    padding: 0.625rem;
+    font-size: 1.25rem;
+}
+.login-container1{
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 37.5rem;
+    text-align: center;
+    padding: 0 2.5rem 2.5rem 2.5rem;
+    
+
+}  
+.cb{
+    display: inline;
+}
+
+.login-signup{
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+#login-submit{
+    display: block;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: -webkit-fill-available;
+    background-color:#1A5D1A;
+    border: white;
+    border-radius: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 1.5rem;
+}
+#login-submit2{
+    display: block;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: -webkit-fill-available;
+    background-color: white;
+    border-color:#1A5D1A;
+    border-radius: 2rem;
+    border-width: 0.19rem;
+    margin-top: 2rem;
+    color: #1A5D1A;
+    font-size: 1.5rem;
+}
+
