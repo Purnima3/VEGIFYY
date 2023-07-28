@@ -48,7 +48,6 @@ body {
     height: 100%;
     width: 100%;
     background: var(--background);
-    color: var(--color2);
 }
 
 /* section */
@@ -347,4 +346,94 @@ input[type=submit]:hover {
     width: 100%;
     margin-top: 0;
   }
+}
+
+.contact-container{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+/*css for the product cards*/
+
+h2{
+  font-size: 3rem;
+  justify-content: center;
+  text-align: center;
+}
+
+..ccontent h3{
+  text-align: center;
+  font-size: 0;
+  margin:0;
+  padding-top: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.gallary{
+  display: flex;
+  flex-wrap:wrap;
+  width:100%;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.ccontent{
+  width: 20%;
+  margin: 15px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-radius: 20px;
+  cursor:pointer;
+  padding-top: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+  transition: .4s;
+  background: #f2f2f2;
+}
+
+.ccontent:hover{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+  transform: translate(0px , -8px);
+}
+
+.ccontent img{
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin:auto;
+  display: block;
+}
+
+.ccontent p{
+  text-align: center;
+  color:#b2bec3;
+  padding-top: 0 8px;
+}
+.ccontent h6{
+  font-size: 26px;
+  text-align: center;
+  color: #222f3e;
+  margin: 0;
+}
+
+.ccontent button{
+  text-align: center;
+  font-size: 24px;
+  color:#fff;
+  width: 100%;
+  padding:15px;
+  border:0;
+  outline:none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-right-radius:20px;
+  border-bottom-left-radius: 20px;
+}
+
+.buy{
+  background: #2183a2;
 }
