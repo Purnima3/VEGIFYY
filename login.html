@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp form</title>
+
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="login-container1">
+        <h1>Log in</h1>
+        <div class="login-container2">
+            <form action="backend.php">    
+                
+                <div class="login-container3">
+                    <label for="number"></label>
+                    <input class="login-textInput" type="email" id="email" name="myEmail" placeholder="Mobile Number">
+        
+                    <label for="password"></label>
+                    <input class="login-textInput" type="password" id="password" name="myPassword" placeholder="Password">
+
+                </div>
+                
+                <input id ="login-submit" type="submit" value="Log in">
+                <hr>
+                <h2>OR</h2>
+                <hr>
+                <input id ="login-submit2" type="submit" value="Login with OTP">
+
+                <div class="login-signup">
+                    <span class="login-signup">Don't have an account?
+                        <a href="#">Sign Up Now</a>
+                    </span>
+                </div>
+            </form>
+        </div>
+        
+        
+    </div>
+</body>
+</html>
