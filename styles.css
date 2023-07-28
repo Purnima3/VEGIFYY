@@ -16,6 +16,8 @@
 --secondary: #d3f8dd;
 --accent: #22dd54;
 --color2: #ae2d2d;
+--orange:#ff7800;
+--black:#130f40;
 --background1: #74dcb8;
 --shadow-color: 158deg 34% 54%;
 --shadow-elevation-low:
@@ -436,4 +438,94 @@ a{
 
 .buy{
   background: #2183a2;
+}
+
+.footer{
+	background:#1f242d;
+    width: 100%;
+}
+.footer .box-container{
+	display:grid;
+	grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+	gap:1.5rem;
+}
+.footer .box-container .box h3{
+font-size:2.5rem;
+color:var(--background);
+padding:1rem 0;
+}
+.footer .box-container .box h3 i{
+color:var(--orange);
+}
+.footer .box-container .box p{
+display:block;
+font-size:3.5rem;
+color:var(--background);
+padding:1rem 0;
+}
+.footer .box-container .box p i{
+	color:var(--orange);
+	padding-right: .5rem;
+}
+.footer .box-container .box p:hover i{
+
+	padding-right: 3rem;
+}
+
+.footer .box-container .box p{
+	line-height:1.8;
+font-size:1.5rem;
+color:white;
+padding:0rem 0;
+
+}
+.footer .box-container .box  .email{
+width:100%;
+margin:7rem 0;
+padding:1rem;
+border-radius: 5rem;
+background: white;
+font-size:1.6rem;
+color:var(--black);
+text-transform: none;
+}
+.footer .box-container .box  .payment-img{
+margin-top:-6rem;
+height:4 rem;
+position: relative;
+left:180px;
+background-color: #b374e7;
+}
+.footer .credit{
+	text-align:center;
+	margin-top: 2rem;
+	padding:1rem;
+	padding-top: 2.5rem;
+	font-size:2rem;
+	color:var(--background);
+	border-top:var(--border);
+}
+.footer .credit span{
+	color:var(--orange);
+}
+.footer  .box-container .box .btn:hover{
+        color:white;
+}
+.footer  .box-container .box .btn{
+	position: relative;
+	left:240px;
+	background-color: var(--orange);
+}
+.new{
+    position: relative;
+    top:70px;
+}
+.new h3{
+	position: relative;
+	left:190px;
+}
+.new1{
+    position: relative;
+    left:50px;
+	top:100px;
 }
