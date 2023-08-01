@@ -20,11 +20,17 @@
 <body>
     <img src="./login_page_img1.jpg" alt="imgS">
     <div class="login-container1">
-        <h1>Log in</h1>
+        <h1>SignUp</h1>
         <div class="login-container2">
             <form action="backend.php">    
                 
                 <div class="login-container3">
+
+                    <label for="fname"></label>
+                    <input class="login-textInput" type="text" id="fname" name="fname" placeholder="First Name">
+        
+                    <label for="lname"></label>
+                    <input class="login-textInput" type="text" id="lname" name="lname" placeholder="Last Name">
 
                     <label for="phone"></label>
                     <input class="login-textInput" type="tel" id="phone" name="phone" placeholder="Mobile Number">
@@ -33,23 +39,19 @@
                     <input class="login-textInput" type="password" id="password" name="myPassword" placeholder="Password">
 
                 </div>
-                
-                <input id ="login-submit" type="submit" value="Log in">
-                <hr>
-                <h2>OR</h2>
-                <hr>
-                <input id ="login-submit2" type="submit" value="Login with OTP">
 
                 <div class="login-signup">
-                    <span class="login-signup">Don't have an account?
-                        <a id ="signup" href="./signup.html">Sign Up Now</a>
+                    <span class="login-signup">Already a member?
+                        <a href="./login.html">Log in</a>
                     </span>
                 </div>
-            </form>
+                
+                <input id ="login-submit" type="submit" value="Signup" style="margin-top: 2rem; margin-left: 15%; width:75%;">
 
+            </form>
         </div>
         
+        
     </div>
-    
 </body>
 </html>
