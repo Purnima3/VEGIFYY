@@ -1,9 +1,10 @@
 body{
     font-family: 'Noto Sans', sans-serif;
     margin: 0px;
-    background-color: white;
+    
 }
 h1{
+    margin-top: 1rem;
     margin-bottom: 4.688rem;
     text-align: center;
 }
@@ -12,7 +13,7 @@ h2{
 }
 hr{
     display: inline-block;
-    width: 46%;
+    width: 45%;
 }
 
 label{
@@ -31,8 +32,13 @@ select{
     padding: 0.5rem 0 0.5rem 0.5rem;
     margin-bottom: 1rem;
 }
+img{
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+}
 .login-textInput{
-    height: 30px;
+    height: 1.5rem;
     display: block;
     width: -webkit-fill-available;
     margin-bottom: 1.6rem;
@@ -42,14 +48,13 @@ select{
     font-size: 1.25rem;
 }
 .login-container1{
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    width: 37.5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30.5rem;
     text-align: center;
     padding: 0 2.5rem 2.5rem 2.5rem;
-    
 
 }  
 .cb{
@@ -70,10 +75,14 @@ select{
     background-color:#1A5D1A;
     border: white;
     border-radius: 2rem;
-    margin-top: 3rem;
+    margin-top: 0rem;
     margin-bottom: 2rem;
     color: white;
     font-size: 1.5rem;
+}
+#login-submit:hover{
+    background-color: #034403;
+    
 }
 #login-submit2{
     display: block;
@@ -88,5 +97,8 @@ select{
     margin-top: 2rem;
     color: #1A5D1A;
     font-size: 1.5rem;
+}
+#login-submit2:hover{
+    background-color: #aff5af;
 }
 

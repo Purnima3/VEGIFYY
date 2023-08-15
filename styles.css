@@ -852,6 +852,11 @@ a {
 	color: var(--black);
 	text-transform: none;
 }
+
+.footer .box-container .box .share a:hover{
+    color:#22dd54;
+}
+
 .footer .box-container .box .payment-img {
 	margin-top: -6rem;
 	height: 4 rem;
