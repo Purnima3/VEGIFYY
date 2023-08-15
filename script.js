@@ -119,3 +119,70 @@ tl2.to(".page4", {
 	backgroundColor: "#FFFFED",
 	color: "black",
 });
+
+var searchbtn1 = document.querySelector(".search-btn");
+var searchInput1 = document.querySelector(".search-Input");
+
+function filterProduct1() {
+	const searchVal = searchInput1.value.toLowerCase();
+	const prodItems = document.querySelectorAll(".ccontent");
+
+	prodItems.forEach((item) => {
+		const title = item.querySelector("h3").innerText.toLowerCase();
+
+		if (title.includes(searchVal) || searchVal == "") {
+			item.style.display = "block";
+		} else {
+			item.style.display = "none";
+		}
+	});
+}
+searchbtn1.addEventListener("click", filterProduct1);
+searchInput1.addEventListener("keyup", filterProduct1);
+filterProduct1();
+
+// For the second set of search input and button
+var searchbtn2 = document.querySelector(".search-btn-2");
+var searchInput2 = document.querySelector(".search-Input-2");
+
+function filterProduct2() {
+	const searchVal = searchInput2.value.toLowerCase();
+	const prodItems = document.querySelectorAll(".ccontent");
+
+	prodItems.forEach((item) => {
+		const title = item.querySelector("h3").innerText.toLowerCase();
+
+		if (title.includes(searchVal) || searchVal === "") {
+			item.style.display = "block";
+		} else {
+			item.style.display = "none";
+		}
+	});
+}
+
+searchbtn2.addEventListener("click", filterProduct2);
+searchInput2.addEventListener("keyup", filterProduct2);
+filterProduct2();
+
+// For the third set of search input and button
+var searchbtn3 = document.querySelector(".search-btn-3");
+var searchInput3 = document.querySelector(".search-Input-3");
+
+function filterProduct3() {
+	const searchVal = searchInput3.value.toLowerCase();
+	const prodItems = document.querySelectorAll(".ccontent");
+
+	prodItems.forEach((item) => {
+		const title = item.querySelector("h3").innerText.toLowerCase();
+
+		if (title.includes(searchVal) || searchVal === "") {
+			item.style.display = "block";
+		} else {
+			item.style.display = "none";
+		}
+	});
+}
+
+searchbtn3.addEventListener("click", filterProduct3);
+searchInput3.addEventListener("keyup", filterProduct3);
+filterProduct3();
