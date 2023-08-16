@@ -7,9 +7,17 @@ const  url = "mongodb://localhost:27017/vegifyDatabase"
 
 MongoClient.connect(url,(err,db)=>{
     if(err) throw err;
-    console.log("Data Base has been created");
-})
+   const dbo = db.db('vegifyDatabase')
+   
+   var myobj = {username: 'Purnima3', Password : "hehe"}
 
+   dbo.collection('Users').insertOne(myobj,(err,res)=>{
+    if(err) throw err;
+    console.log("Document inserted");
+    db.close();
+   })
+})
+  
 
 
 
