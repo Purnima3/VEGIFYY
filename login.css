@@ -15,7 +15,106 @@ hr{
     display: inline-block;
     width: 45%;
 }
+.hand {
+  width: 16em;
+  height: 8em;
+  position: relative;
+  left:683px;
+  bottom:258px;
+  font-size: 10px;
+  position: relative;
+  color: darksalmon;
+}
 
+.hand::before {
+  content: '';
+  position: absolute;
+  width: 14em;
+  height: 4.5em;
+  background-color: black;
+  border-radius: 4em 1em;
+  top: 4em;
+  filter: blur(1em) opacity(0.3);
+}
+
+.palm {
+  position: absolute;
+  width: 8em;
+  height: 6em;
+  background-color: currentColor;
+  border-radius: 1em 4em;
+  right: 0;
+}
+
+.thumb {
+  position: absolute;
+  width: 9.6em;
+  height: 3.2em;
+  background-color: currentColor;
+  border-radius: 3em 2em 2em 1em;
+  right: 0;
+  bottom: 1em;
+  transform-origin: calc(100% - 2em) 2em;
+  transform: rotate(-20deg);
+  border-bottom: 0.2em solid rgba(0, 0, 0, 0.1);
+  border-left: 0.2em solid rgba(0, 0, 0, 0.1);
+}
+
+.thumb::before {
+  content: '';
+  position: absolute;
+  width: 1.9em;
+  height: 1.9em;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 60% 10% 10% 30%;
+  bottom: -0.3em;
+  left: 0.5em;
+  border-right: 0.1em solid rgba(0, 0, 0, 0.1);
+}
+
+.finger:not(:first-child) {
+  position: absolute;
+  width: 6.4em;
+  height: 3.5em;
+  background-color: currentColor;
+  right: 5.2em;
+  bottom: 4em;
+  transform-origin: 100% 2em;
+  transform: rotate(10deg);
+  --scale: calc(1 - (5 - var(--n)) * 0.2);
+  transform: rotate(10deg) scale(var(--scale));
+  filter: brightness(calc(100% - (5 - var(--n)) * 10%));
+  animation: tap-upper 1.2s ease-in-out infinite;
+  animation-delay: calc((var(--n) - 2) * 0.1s);
+}
+
+@keyframes tap-upper {
+  0%, 50%, 100% {
+      transform: rotate(10deg) scale(var(--scale));
+  }
+
+  40% {
+      transform: rotate(50deg) scale(var(--scale));
+  }
+}
+
+.finger:not(:first-child)::before {
+  content: '';
+  position: absolute;
+  width: 9em;
+  height: 3em;
+  background-color: currentColor;
+  right: 4.2em;
+  top: 0.2em;
+  border-radius: 2em;
+  transform-origin: calc(100% - 2em) 2em;
+  transform: rotate(-60deg);
+}
+
+.finger:nth-child(2) { --n: 2; }
+.finger:nth-child(3) { --n: 3; }
+.finger:nth-child(4) { --n: 4; }
+.finger:nth-child(5) { --n: 5; }
 label{
     font-family: 'Poppins', sans-serif;
     display: block;
@@ -57,6 +156,135 @@ img{
     padding: 0 2.5rem 2.5rem 2.5rem;
 
 }  
+.container {
+    position: relative;
+    width: 400px;
+    border-radius: 20px 20px 0 0;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    bottom:30px;
+    gap: 10px;
+    padding-bottom: 70px;
+    
+  }
+  .container h2 {
+    color: #666;
+    font-weight: 500;
+  }
+  
+  .container .inputArea {
+    position: relative;
+    width: 100%;
+  }
+  
+  .container .inputArea input {
+    position: relative;
+    width: 116%;
+    right:7%;
+    border-radius: -0.375rem;
+    padding: 0.625rem;
+    font-size: 1.25rem;
+    padding: 10px;
+    
+    font-size: 1.1em;
+  }
+  
+  .container .strengthMeter {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+   
+  }
+  .input {
+    position: relative;
+
+  }
+  .container .strengthMeter::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    transition: 0.5s;
+    background: rgb(105, 38, 38);
+  }
+  
+  .container.weak .strengthMeter::before {
+    width: 10%;
+    background: #f00;
+    filter: drop-shadow(0 0 5px #f00) drop-shadow(0 0 10px #f00)
+      drop-shadow(0 0 20px #f00);
+  }
+  
+  .container.moderate .strengthMeter::before {
+    width: 70%;
+    background: #eedc3d;
+    filter: drop-shadow(0 0 5px #eedc3d) drop-shadow(0 0 10px #eedc3d)
+      drop-shadow(0 0 20px #eedc3d);
+  }
+  
+  .container.strong .strengthMeter::before {
+    width: 100%;
+    background: #18e605;
+    filter: drop-shadow(0 0 5px #18e605) drop-shadow(0 0 10px #18e605)
+      drop-shadow(0 0 20px #18e605);
+  }
+  
+  .container .strengthMeter::after {
+    position: absolute;
+    top: -45px;
+    left: 30px;
+    transition: 0.5s;
+    color: aliceblue;
+  }
+  
+  .container.container.weak .strengthMeter::after {
+    content: "Weak Password";
+    color: #f00;
+    filter: drop-shadow(0 0 5px#f00);
+  }
+  
+  .container.container.container.moderate .strengthMeter::after {
+    content: "Moderate Password";
+    color: #eedc3d;
+    filter: drop-shadow(0 0 5px#eedc3d);
+  }
+  
+  .container.container.container.container.strong .strengthMeter::after {
+    content: "Strong Password";
+    color: #18e605;
+    filter: drop-shadow(0 0 5px#18e605);
+  }
+  
+  .show {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 60px;
+    height: 50%;
+    background: black;
+    border: 6px solid #e4e4e4;;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .show::before {
+    content: "Show";
+    font-size: 0.6em;
+    color: aliceblue;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  
+  .show.hide::before {
+    content: "Hide";
+  }
 .cb{
     display: inline;
 }
@@ -90,7 +318,8 @@ img{
     padding-top: 1rem;
     padding-bottom: 1rem;
     width: -webkit-fill-available;
-    background-color: white;
+    background-color: greenyellow;
+    text-decoration: none;
     border-color:#1A5D1A;
     border-radius: 2rem;
     border-width: 0.19rem;
@@ -101,4 +330,54 @@ img{
 #login-submit2:hover{
     background-color: #aff5af;
 }
-
+p {
+    padding-bottom: 16px;
+  }
+  /* ======================== */
+  
+  .input__field {
+    height: 1.5rem;
+    width: -webkit-fill-available;
+    margin-bottom: 1.6rem;
+    border: 1px solid black;
+    border-radius: 0.625rem;
+    padding: 0.625rem;
+    font-size: 1.25rem;
+    border-radius: 4px;
+    font: inherit;
+    border-radius: 1rem;
+    background-color: transparent;
+    outline: 2px solid black;
+  }
+  .input__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10px, 10px);
+    transform-origin: left;
+    transition: transform 0.25s;
+  }
+  .input_field:focus-visible ~ .input_label,
+  .input_field:valid ~ .input_label {
+    transform: translate(0, -30px) scale(0.8);
+    color: #d1c5fc;
+  }
+  
+  .input__field:is(:focus-visible, :valid) {
+    outline-color: #d1c5fc;
+  }
+  .input__icon-wrapper {
+    position: absolute;
+    top: 30%;
+    right: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  input 
+  .input__icon {
+    color: #999;
+    font-size: 24px;
+  }
+  .input__icon:hover {
+    color: #333;
+  }
