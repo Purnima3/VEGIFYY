@@ -4,6 +4,9 @@ function redirect() {
 	window.location.href = "login.html";
 }
 
+
+
+
 // From locomotive Github > Smooth ke niche
 // const scroll = new LocomotiveScroll({
 // 	el: document.querySelector(".main"),
