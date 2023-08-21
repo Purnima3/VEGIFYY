@@ -259,6 +259,9 @@ body
 
 /* email error message */
 #email-error {
-  
-    color: red;
+    color: #BB2525;
+}
+
+#phone-error {
+    color: #BB2525;
 }

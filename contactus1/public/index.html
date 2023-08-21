@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
     <link rel="stylesheet" href="style.css">
+    <script src="myscript.js"></script>
 </head>
 <body>
     <div class="contactus">
@@ -21,25 +22,30 @@
                     <div class="row50">
                         <div class="inputbox">
                             <span>First Name</span>
-                            <input type="text"placeholder="First Name..." name="fname" required>
+                            <input type="text"placeholder="First Name..." name="fname" id="fnamevalid" onclick="validname1()" required>
+                            <span id="fname-error"></span>
                         </div>
 
                         <div class="inputbox">
                             <span>Last Name</span>
-                            <input type="text" placeholder="Last Name..."  name="lname">
+                            <input type="text" placeholder="Last Name..."  name="lname" id="lnamevalid" onclick="validname2()">
+                            <span id="lname-error"></span>
                         </div>
                     </div>
                     <!-- email -->
                     <div class="row50">
                         <div class="inputbox">
-                            <span id="email-label">Email</span>
-                            <input type="text" placeholder="SilentVoice@gmail.com" name="email" id="email-field" onkeyup="validateEmail()" required>
+                            <span>Email</span>
+                            <input type="email" spellcheck="false" placeholder="SilentVoice@gmail.com" name="email" id="email-field" onkeyup="validateEmail()" required>
                             <span id="email-error"></span>
                         </div>
+
+                        
                     <!-- mobile number -->
                         <div class="inputbox">
                             <span>Mobile</span>
-                            <input type="text" placeholder="+91 123 456 7890" name="mobile">
+                            <input type="phone" placeholder="+91 123 456 7890" name="mobile" id="phone-valid" onkeyup="validphone()">
+                            <span id="phone-error"></span>
                         </div>
                     </div>
 
