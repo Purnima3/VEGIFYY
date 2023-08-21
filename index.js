@@ -1,7 +1,7 @@
 const express = require('express');
 const MongoClient = require('mongodb').MongoClient;
 const app = express();
-
+  
 
 const  url = "mongodb://localhost:27017/vegifyDatabase"
 
@@ -29,7 +29,7 @@ MongoClient.connect(url,(err,db)=>{
 
 
 app.get('/',(req,res)=>{
-    res.send("Hello")
+    res.send("Hello") 
 })
 
 app.listen(3000)
