@@ -5,12 +5,13 @@ const mongoose = require('mongoose');
 const app = express();
 const port = process.env.PORT || 3000;
 
+
 // Middleware
 app.use(bodyParser.json());
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const DB_URI = "mongodb+srv://Nitin:pzlpfWhNJxaQtYta@contactus.2oxbxjx.mongodb.net/?retryWrites=true&w=majority";
+const DB_URI = "mongodb+srv://purnimakabadwal3:ejtk9aHuqEpIADlv@purnima.2ydc711.mongodb.net/?retryWrites=true&w=majority";
 
 // MongoDB Connection
 mongoose.connect(DB_URI, {
