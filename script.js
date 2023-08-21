@@ -4,9 +4,6 @@ function redirect() {
 	window.location.href = "login.html";
 }
 
-
-
-
 // From locomotive Github > Smooth ke niche
 // const scroll = new LocomotiveScroll({
 // 	el: document.querySelector(".main"),
@@ -132,7 +129,7 @@ function filterProduct1() {
 
 	prodItems.forEach((item) => {
 		const title = item.querySelector("h3").innerText.toLowerCase();
-
+		console.log("Prod1");
 		if (title.includes(searchVal) || searchVal == "") {
 			item.style.display = "block";
 		} else {
