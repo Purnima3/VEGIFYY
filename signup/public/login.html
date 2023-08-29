@@ -120,14 +120,14 @@
             <span>N</span>        
         </h1>
         <div class="login-container2">
-            <form action="backend.php">    
+            <form action="/logsubmit" method="post">    
                 
                 <div class="login-container3">
 
                     <label for="phone"></label>
                     <input class="login-textInput" type="tel" id="phone" name="phone" placeholder="Mobile Number">
               <div class="input">      
-<input  class="input__field" type="password" id="password"  placeholder="Password">
+<input  class="input__field" type="password" id="password" name="password" placeholder="Password">
 <span class="input__icon-wrapper">
     <i class="input__icon ri-eye-off-line"></i>
   </span>
@@ -141,7 +141,7 @@
               
                 <div class="login-signup">
                     <span class="login-signup">Don't have an account?
-                        <a id ="signup" href="./signup.html">Sign Up Now</a>
+                        <a id ="signup" href="./index.html">Sign Up Now</a>
                     </span>
                 </div>
             </form>

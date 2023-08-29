@@ -1,7 +1,7 @@
 let user = document.getElementById("user");
 user.addEventListener("click", redirect);
 function redirect() {
-	window.location.href = "login.html";
+	window.location.href = "./signup/info/login.html";
 }
 
 // From locomotive Github > Smooth ke niche
