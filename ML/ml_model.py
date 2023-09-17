@@ -99,3 +99,30 @@ for name, model in models.items():
 
 for name, model in models.items():
     print(name + " R^2 Score: {:.5f}".format(model.score(X_test, y_test)))
+
+
+def predict_vegetable_price(new_data, trained_model):
+    """
+    Predict vegetable prices using a trained Linear Regression model.
+
+    Args:
+        new_data (DataFrame): The new data for which you want to predict prices.
+        trained_model: A trained Linear Regression model.
+
+    Returns:
+        predictions (array-like): Predicted prices for the new data.
+    """
+    # Preprocess the new data
+    new_data = preprocess_inputs(new_data)
+
+    # Make predictions using the trained Linear Regression model
+    predictions = trained_model.predict(new_data)
+
+    return predictions
+
+# trained_model = LinearRegression()
+model = LinearRegression()
+
+# Fit the model to the training data
+model.fit(X_train, y_train)
+predict_vegetable_price(data , model)
