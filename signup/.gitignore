@@ -1,0 +1,9 @@
+# Ignore the node_modules directory
+node_modules/
+
+# Ignore compiled Java class files
+*.class
+
+# Ignore environment-specific files
+.env
+.env.local
